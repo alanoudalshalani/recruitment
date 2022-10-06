@@ -46,7 +46,7 @@ def main():
     print("Welcome to the special recruitment program, please answer the following questions:")
     skills = get_skills()
     cv = get_user_cv(skills)
-    if check_acceptance(cv, skills):
+    if check_acceptance(cv, skills[2]):
         print("You have been accepted, ", cv["name"], ".")
     else:
         print("You have been rejected, ", cv["name"], ".")
